@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Estilização do Header */
+header {
+    padding: 16px 0;
+    background-color:#550e0e;
+}
+
+.header-container a img {
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.header-container a img:hover {
+    transform: scale(1.2);
+}
+
+header nav li {
+    display: inline;
+    margin-left: 20px;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header nav li a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+header nav li a:hover {
+    transform: scale(1.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Fim da estilização do Header */
+
+/* Estilização do Main */
+h2 {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
