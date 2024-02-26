@@ -1,0 +1,15 @@
+/*                                         */
+/* Agrupamento os estilos usados na página */
+/*                                         */
+
+:root {
+    /* Fontes */
+    --font-staatliches: "Staatliches", sans-serif;
+    --font-teko: "Teko", sans-serif;
+
+    /* Cores */
+    --color-main: #540c0c;
+    --color-main-hover: #751f1f;
+    --color-buttons: #f2f2f2;
+    --color-buttons-hover: #ffffff;
+}

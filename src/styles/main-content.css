@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Estilização do Header */
+header {
+    padding: 16px 0;
+    background-color:var(--color-main);
+}
+
+.header-container a img {
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.header-container a img:hover {
+    transform: scale(1.2);
+}
+
+header nav li {
+    display: inline;
+    margin-left: 20px;
+    font-family: var(--font-staatliches);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Para que o hover funcione o display do link a tem que ser inline-block */
+header nav li a {
+    display: inline-block;
+    color: var(--color-buttons);
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+header nav li a:hover {
+    transform: scale(1.1);
+    color: var(--color-buttons-hover);
+}
+
+.header-container,
+.about-section,
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Fim da estilização do Header */
+
+/* Estilização do about-section */
+
+.about-section img {
+    margin-right: 3.3vw;
+    max-width: 40vw;
+}
+
+.brands-list img {
+    height: 2vh;
+    margin-right: 1vw;
+}
+
+section {
+    padding: 24px 0;
+    color: var(--color-main);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-family: var(--font-staatliches);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-main);
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    font-family: var(--font-teko);
+    text-align: justify;
+}
+
+.brands-list img {
+    height: 6vh;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
+
+.brands-list li {
+    display: inline;
+}
+
+/* Fim da estilização do about-section */
+
+/* Início da estilização do contatc-section */
+
+.contact-section {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-section h3 {
+    font-size: 1.5rem;
+    font-family: var(--font-teko);
+    font-weight: 600;
+    color: var(--color-main);
+    margin-bottom: 2vh;
+}
+
+.contact-section p {
+    color: var(--color-main);
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 25vw;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.contacts-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Propriedade resize usada para que o tamanho da caixa de mensagem não possa ser alterada pelo usuário. */
+form textarea {
+    resize: none;
+    height: 23.2vh;
+}
+
+.social-links img {
+    height: 3.1vh;
+    margin-right: 1vw;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+.social-links li a img {
+    margin-bottom: 6vh;
+}
+
+.link-whatsapp {
+    display: inline-block;
+    background-color: var(--color-main);
+    color: var(--color-buttons);
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.link-whatsapp:hover {
+    background-color: var(--color-main-hover);
+    transform: scale(1.1);
+}
+
+
+
+form button {
+    background-color: var(--color-main);
+    font-family: var(--font-staatliches);
+    font-size: 1rem;
+    color: var(--color-buttons);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color:var(--color-main-hover);
+}
+
+input:focus,
+textarea:focus {
+    color: var(--color-main);
+}
+
+/* Fim da estilização do contact-section */
+
+/* Estilização do Footer */
+
+footer {
+    padding: 16px 0;
+    font-family: var(--font-teko);
+    background-color: var(--color-main);
+    color: var(--color-buttons-hover);
+    font-size: 1.3rem;
+}
+
+/* Começo da estilização do catálogo de produtos */
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: var(--font-staatliches);
+    font-size: 5rem;
+    color: var(--color-main);
+}

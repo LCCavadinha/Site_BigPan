@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BigPan Produtos para panificação</title>
+    <title>BigPan Produtos para Panificação</title>
     <link rel="icon" href="./src/images/Logo-BigPan.ico" type="image/ico">
 
     <link rel="stylesheet" href="./src/styles/reset.css">
-    <link rel="stylesheet" href="./src/styles/styles.css">
+    <!-- Import de variáveis usadas no projeto -->
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
+
+    <!-- Imports dos ícones usados no projeto -->
+    <script src="https://kit.fontawesome.com/98d7cb019f.js" crossorigin="anonymous"></script>
 
     <!-- Import de fontes usadas no projeto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Rationale&family=Staatliches&family=Teko:wght@300..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rationale&family=Staatliches&family=Teko:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,13 +30,13 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#about">Sobre a Loja</a>
+                        <a href="#about">Sobre a Empresa</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="#contact">Contato</a>
                     </li>
                     <li>
-                        <a href="#">Produtos</a>
+                        <a href="./catalog.html">Produtos</a>
                     </li>
                 </ul>
             </nav>
@@ -45,7 +48,7 @@
             <div class="about-section">
                 <img src="./src/images/Frente-loja.jpeg" alt="Funcionários">
                 <div>
-                    <h2>Sobre a Loja</h2>
+                    <h2>Sobre a Empresa</h2>
                     <p>
                         Com mais de duas décadas de experiência, somos uma distribuidora de renome na área da grande
                         João
@@ -117,7 +120,102 @@
                 </div>
             </div>
         </section>
+
+        <section id="contact">
+            <div class="contact-section">
+                <h2>Contato</h2>
+                <div class="contacts-methods">
+                    <div>
+                        <h3>
+                            <i class="fa-regular fa-envelope"></i>
+                            Deixe sua sugestão
+                        </h3>
+                        <form>
+                            <!-- Propriedade required é usada no formulário, para informar ao usuário que aquele campo a ser preenchido é obrigatório -->
+                            <input type="text" placeholder="Seu Nome" required>
+                            <input type="email" placeholder="Seu e-mail" required>
+                            <input type="tel" placeholder="Seu Telefone (Opcional)">
+                            <textarea placeholder="Sua mensagem" required></textarea>
+                            <button type="submit">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Enviar
+                            </button>
+                        </form>
+                    </div>
+                    <div>
+                        <h3>
+                            <i class="fa-solid fa-earth-americas"></i>
+                            Acompanhe-nos
+                        </h3>
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://www.instagram.com/bigpan.pb/" target="_blank"
+                                    title="Siga-nos no Instagram">
+                                    <img src="./src/images/instagram.png" alt="Logo do instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Siga-nos no Facebook">
+                                    <img src="./src/images/facebook.png" alt="Logo do facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Siga-nos no TikTok">
+                                    <img src="./src/images/tiktok.png" alt="Logo do tiktok">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Visite nosso canal no YouTube">
+                                    <img src="./src/images/youtube.png" alt="Logo do youtube">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h3>
+                            <!-- Link de redirecionamento para o whatsapp -->
+                            <a href="https://wa.me/5583988405303" target="_blank" class="link-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Solicite já seu orçamento
+                            </a>
+                        </h3>
+
+                    </div>
+                    <div>
+                        <h3>
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            Venha até nós
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Avenida Generino Maciel, 197, Jaguaribe - João Pessoa - PB
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                            3221-1084
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9493148361157!2d-34.87357442495443!3d-7.131859792872091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace81ad4ad96d7%3A0x34a22fa46145845e!2sAv.%20Generino%20Maciel%2C%20197%20-%20Jaguaribe%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058015-700!5e0!3m2!1spt-BR!2sbr!4v1708969061352!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>
+                &copy; BIG PAN - COMERCIO DE PRODUTOS PARA PANIFICAÇÃO LTDA
+            </p>
+            <P> 
+                Avenida Generino Maciel, 197 A
+            </P>
+            <p>
+                Jaguaribe - CEP: 58015-700
+            </p>
+            <p>
+                João Pessoa - PB
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
