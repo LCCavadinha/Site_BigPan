@@ -25,7 +25,9 @@ header nav li {
     font-style: normal;
 }
 
+/* Para que o hover funcione o display do link a tem que ser inline-block */
 header nav li a {
+    display: inline-block;
     color: #ffffff;
     font-size: 1.5rem;
     text-decoration: none;
@@ -36,7 +38,8 @@ header nav li a:hover {
     transform: scale(1.1);
 }
 
-.header-container {
+.header-container,
+.about-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,10 +51,45 @@ header nav li a:hover {
 /* Fim da estilização do Header */
 
 /* Estilização do Main */
-h2 {
-    font-family: "Teko", sans-serif;
+
+.about-section img {
+    margin-right: 3.3vw;
+    max-width: 40vw;
+}
+
+.brands-list img {
+    height: 2vh;
+    margin-right: 1vw;
+}
+
+section {
+    padding: 24px 0;
+    color:  #182c61;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-family: "Staatliches", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 35px;
+    color: #550e0e;
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    font-family: "Teko", sans-serif;
+    text-align: justify;
+}
+
+.brands-list img {
+    height: 6vh;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
+
+.brands-list li {
+    display: inline;
 }
